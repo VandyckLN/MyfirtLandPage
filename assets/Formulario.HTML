@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body id="body-formulario">
+    <a href="index.Html"
+      ><img class="logo-form" src="IMG_1447.PNG" alt="logo personal trainer"
+    /></a>
+    <form id="formulario" onsubmit="enviarEmail(event)">
+      <input type="text" id="nome" placeholder="Nome" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <select id="assunto" required>
+        <option value="">Selecione um assunto</option>
+        <option value="consultoria">Consultoria</option>
+        <option value="treino">Treino</option>
+        <option value="duvida">Dúvida</option>
+      </select>
+      <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <!-- Corrigir o caminho do script -->
+    <script src="./js/form.js"></script>
+  </body>
+</html>
